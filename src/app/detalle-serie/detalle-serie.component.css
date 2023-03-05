@@ -1,0 +1,26 @@
+.card-title {
+    padding-bottom: 1rem;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.card {
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.button {
+    padding-top: 1rem;
+    padding-bottom: 1rem;;
+}
+
+img {
+    width: 100%;
+    height: 250px;
+    object-fit:cover;
+}
+
+.mas-info {
+    flex-wrap:wrap;
+    align-items: center;
+}

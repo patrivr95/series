@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+.listado-personajes app-detalle-listado img {
+    height: 100px !important;
+}
+
+.listado {
+    padding: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}

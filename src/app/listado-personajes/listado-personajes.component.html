@@ -1,0 +1,5 @@
+
+<div class="container listado listado-personajes">
+    <app-detalle-listado *ngFor="let personaje of listadoPersonajes" [imagen]="personaje.imagen" [texto]="personaje.nombre_real" [id]="personaje.id" url="/personajes"></app-detalle-listado>
+</div>
+

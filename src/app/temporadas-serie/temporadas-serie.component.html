@@ -1,0 +1,9 @@
+<div class="container">
+    <ul class="list-group" *ngIf="temporadas && temporadas.length > 0; else bloqueSinTemporadas">
+        <li class="list-group-item" *ngFor="let temporada of temporadas">{{temporada}}</li>
+    </ul>
+</div>
+
+<ng-template #bloqueSinTemporadas>
+    <p>No hay temporadas disponibles para esta serie</p>
+</ng-template>

@@ -1,0 +1,30 @@
+<div class="card mb-3" style="max-width: 540px;" *ngIf="personaje; else bloqueSinPersonaje">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img [src]="personaje.imagen" class="img-fluid rounded-start" [alt]="'Imagen de ' + personaje.nombre_real">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{personaje.nombre_real}}</h5>
+          <p class="card-text"><span class="fw-bold">Nombre del personaje: </span>{{personaje.nombre_personaje}}</p>
+          <p class="card-text"><span class="fw-bold">Serie: </span>{{personaje.serie}}</p>
+          <p class="card-text"><span class="fw-bold">Episodios: </span>{{personaje.episodios}}</p>
+          <div class="d-flex gap-2">
+           <app-detalle-listado [imagen]="serie.imagen" [texto]="serie.titulo" [id]="serie.id" url="/serie"></app-detalle-listado>
+          </div>
+          <div>
+            <router-outlet></router-outlet>
+          </div>
+          <div>
+            <a [routerLink]="['/personajes']">Volver</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="card-title">
+    <ng-template #bloqueSinPersonaje>
+        El personaje solicitado no existe
+    </ng-template>
+</div>

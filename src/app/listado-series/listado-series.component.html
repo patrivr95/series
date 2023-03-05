@@ -1,0 +1,3 @@
+<div class="d-flex gap-5 container pt-3 listado">
+    <app-detalle-listado *ngFor="let serie of listadoSeries" [imagen]="serie.imagen" [texto]="serie.titulo" [id]="serie.id" url="/serie"></app-detalle-listado>
+</div>

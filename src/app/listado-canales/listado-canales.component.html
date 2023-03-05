@@ -1,0 +1,6 @@
+
+<div class="d-flex gap-5 pt-3 container">
+    <div *ngFor="let canal of listadoCanales" class="canal" [routerLink]="['/canales', canal.nombreUrl]">
+        <p>{{canal.canal}}</p>
+    </div>
+</div>
